@@ -1,6 +1,6 @@
 //
 //  TableViewController.swift
-//  IRem
+//  IList
 //
 //  Created by HengQiang Cao on 6/1/18.
 //  Copyright © 2018 HengQiang Cao. All rights reserved.
