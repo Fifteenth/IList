@@ -19,13 +19,11 @@
 		88BC86C82008FD31004F71BD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BC86C72008FD31004F71BD /* Model.swift */; };
 		88BC86CA20090339004F71BD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BC86C920090339004F71BD /* TableViewCell.swift */; };
 		88CE3F48201C0F4000BF6DA4 /* ViewTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE3F47201C0F4000BF6DA4 /* ViewTestController.swift */; };
-		88F772E72020ACE9005EA006 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88F772E62020ACE8005EA006 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8819EBC4200659EF00C41105 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		884CCF72200A4834007B7F29 /* ViewDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDetailController.swift; sourceTree = "<group>"; };
-		886AF5C91FF134F700191FC7 /* IRem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IRem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		886AF5CC1FF134F700191FC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		886AF5D11FF134F700191FC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		886AF5D41FF134F700191FC7 /* IRem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IRem.xcdatamodel; sourceTree = "<group>"; };
@@ -37,7 +35,7 @@
 		88BC86C72008FD31004F71BD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		88BC86C920090339004F71BD /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		88CE3F47201C0F4000BF6DA4 /* ViewTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTestController.swift; sourceTree = "<group>"; };
-		88F772E62020ACE8005EA006 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		88F772E82020B11F005EA006 /* IList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,18 +52,9 @@
 		886AF5C01FF134F700191FC7 = {
 			isa = PBXGroup;
 			children = (
-				88F772E62020ACE8005EA006 /* Default-568h@2x.png */,
 				886AF5CB1FF134F700191FC7 /* IList */,
-				886AF5CA1FF134F700191FC7 /* Products */,
+				88F772E82020B11F005EA006 /* IList.app */,
 			);
-			sourceTree = "<group>";
-		};
-		886AF5CA1FF134F700191FC7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				886AF5C91FF134F700191FC7 /* IRem.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		886AF5CB1FF134F700191FC7 /* IList */ = {
@@ -105,7 +94,7 @@
 			);
 			name = IList;
 			productName = IRem;
-			productReference = 886AF5C91FF134F700191FC7 /* IRem.app */;
+			productReference = 88F772E82020B11F005EA006 /* IList.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,7 +122,7 @@
 				Base,
 			);
 			mainGroup = 886AF5C01FF134F700191FC7;
-			productRefGroup = 886AF5CA1FF134F700191FC7 /* Products */;
+			productRefGroup = 886AF5C01FF134F700191FC7;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -148,7 +137,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				886AF5DA1FF134F700191FC7 /* LaunchScreen.storyboard in Resources */,
-				88F772E72020ACE9005EA006 /* Default-568h@2x.png in Resources */,
 				886AF5D71FF134F700191FC7 /* Assets.xcassets in Resources */,
 				886AF5D21FF134F700191FC7 /* Main.storyboard in Resources */,
 			);
