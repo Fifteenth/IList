@@ -35,7 +35,7 @@
 		88BC86C72008FD31004F71BD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		88BC86C920090339004F71BD /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		88CE3F47201C0F4000BF6DA4 /* ViewTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTestController.swift; sourceTree = "<group>"; };
-		88F772E82020B11F005EA006 /* IList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88F772E82020B11F005EA006 /* IList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = IList.app; path = "/Users/hengqiangcao/iOS/IList/build/Debug-iphoneos/IList.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				886AF5CB1FF134F700191FC7 /* IList */,
-				88F772E82020B11F005EA006 /* IList.app */,
 			);
 			sourceTree = "<group>";
 		};
