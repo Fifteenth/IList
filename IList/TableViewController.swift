@@ -14,7 +14,21 @@ class TableViewController: UITableViewController {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     var entity = [NSManagedObject]()
-
+    
+    @IBOutlet weak var buttonFilterOrClose: UIBarButtonItem!
+    
+    @IBOutlet weak var viewFilter: UIView!
+    
+    
+    @IBOutlet weak var viewHeader: UIView!
+    
+    @IBAction func filter(_ sender: Any) {
+        //viewFilter.isHidden = true
+        viewHeader.isHidden = true
+        //buttonFilterOrClose
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

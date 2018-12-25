@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewDetailController: UIViewController {
+class ViewDetailController: UIViewController, UITextViewDelegate  {
     
     var user: User?
 
@@ -26,15 +26,25 @@ class ViewDetailController: UIViewController {
         labelDate.text = myString
         labelDate.textAlignment = .right
         
-
+        labelDetail.delegate = self
         
         NotificationCenter.default.addObserver(self, selector: #selector(ViewDetailController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(ViewDetailController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
+    func textViewDidBeginEditing(_ textView: UITextView){
+        if (labelDetail.isFirstResponder && self.view.frame.origin.y == 0){
+            self.view.frame.origin.y -= 200
+        }
+    }
+    
+    func textViewDidEndEditing(_ textField: UITextView){
+       
+    }
+    
     @objc func keyboardWillShow(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-            if self.view.frame.origin.y == 0{
+            if (labelDetail.isFirstResponder && self.view.frame.origin.y == 0){
                 self.view.frame.origin.y -= keyboardSize.height
             }
         }
@@ -42,7 +52,7 @@ class ViewDetailController: UIViewController {
 
     @objc func keyboardWillHide(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-            if self.view.frame.origin.y != 0{
+            if (labelDetail.isFirstResponder && self.view.frame.origin.y != 0){
                 self.view.frame.origin.y += keyboardSize.height
             }
         }
