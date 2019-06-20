@@ -15,3 +15,11 @@ struct User: Codable {
     var date:Date
     var status:String
 }
+
+
+struct Task: Codable {
+    var uuid: String
+    var id: String
+    var subject: String
+    var desc: String
+}
