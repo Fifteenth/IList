@@ -10,15 +10,16 @@ import UIKit
 
 class TaskAddController: UIViewController {
     
-    @IBOutlet weak var txt_id: UITextField!
+    //@IBOutlet weak var txt_id: UITextField!
     
     @IBOutlet weak var txt_Subject: UITextField!
-    @IBOutlet weak var txt_desc: UITextField!
+ 
+    @IBOutlet weak var txt_desc: UITextView!
     
     @IBAction func taskSave(_ sender: Any) {
         print("123456")
         
-        let id = txt_id.text ?? ""
+        let id = ""
         let subject = txt_Subject.text ?? ""
         let desc = txt_desc.text ?? ""
         

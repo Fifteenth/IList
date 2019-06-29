@@ -15,8 +15,10 @@ class TaskViewController: UIViewController {
     
     @IBOutlet weak var txt_id: UITextField!
     @IBOutlet weak var txt_subject: UITextField!
-    @IBOutlet weak var txt_desc: UITextField!
-
+    
+    
+    @IBOutlet weak var txt_desc: UITextView!
+    
     var task: Task?
     
     override func viewDidLoad() {
